@@ -1,1 +1,111 @@
+------------------------
+PURPOSE
+------------------------
+This is a game to play hangman however, the program will cheat and does not actually choose a word until the user selects a letter.  
+The user will be prmopted for a word length and if you enter a negative number, 
+the program will reveal to you the possible words.
 
+----------------------
+Command Line Arguments
+----------------------
+
+Usage: python3 hangman.py
+
+-----------------------
+Running the program
+---------------------
+
+$ python3 hanman.py
+
+--------------------
+Dependencies
+--------------------
+
+There is a file with a list of words that must be in the same folder titled:
+
+hangman_words.txt
+
+------------------
+Sample Output
+-----------------
+What word length would you like? -5
+Potential words: ['abyss', 'affix', 'askew', 'axiom', 'azure', 'banjo', 'bayou', 'blitz', 'buxom', 'crypt', 'cycle', 'equip', 'fjord', 'flyby', 'funny', 'gabby', 'gizmo', 'glyph', 'haiku', 'ivory', 'jazzy', 'jelly', 'juicy', 'jumbo', 'kayak', 'kazoo', 'khaki', 'kiosk', 'klutz', 'lucky', 'lymph', 'nymph', 'ovary', 'pixel', 'polka', 'pshaw', 'puppy', 'queue', 'quips', 'staff', 'topaz', 'unzip', 'vixen', 'vodka', 'waltz', 'wimpy', 'woozy', 'yoked', 'yummy', 'zilch']')
+There are 50 possible words
+You have 5 guesses remaining
+Guessed letters: set()
+Current hint: -----
+Enter a letter: a
+Partitions:
+('a----', ['abyss', 'affix', 'askew', 'axiom', 'azure'])
+('-a---', ['banjo', 'bayou', 'gabby', 'haiku', 'jazzy', 'kazoo', 'waltz'])
+('-----', ['blitz', 'buxom', 'crypt', 'cycle', 'equip', 'fjord', 'flyby', 'funny', 'gizmo', 'glyph', 'ivory', 'jelly', 'juicy', 'jumbo', 'kiosk', 'klutz', 'lucky', 'lymph', 'nymph', 'pixel', 'puppy', 'queue', 'quips', 'unzip', 'vixen', 'wimpy', 'woozy', 'yoked', 'yummy', 'zilch'])
+('-a-a-', ['kayak'])
+('--a--', ['khaki', 'ovary', 'staff'])
+('----a', ['polka', 'vodka'])
+('---a-', ['pshaw', 'topaz'])
+Selected partition: -----
+I'm sorry, a is not in the word!
+Potential words: ['blitz', 'buxom', 'crypt', 'cycle', 'equip', 'fjord', 'flyby', 'funny', 'gizmo', 'glyph', 'ivory', 'jelly', 'juicy', 'jumbo', 'kiosk', 'klutz', 'lucky', 'lymph', 'nymph', 'pixel', 'puppy', 'queue', 'quips', 'unzip', 'vixen', 'wimpy', 'woozy', 'yoked', 'yummy', 'zilch']')
+There are 30 possible words
+You have 4 guesses remaining
+Guessed letters: {'a'}
+Current hint: -----
+Enter a letter: e
+Partitions:
+('-----', ['blitz', 'buxom', 'crypt', 'fjord', 'flyby', 'funny', 'gizmo', 'glyph', 'ivory', 'juicy', 'jumbo', 'kiosk', 'klutz', 'lucky', 'lymph', 'nymph', 'puppy', 'quips', 'unzip', 'wimpy', 'woozy', 'yummy', 'zilch'])
+('----e', ['cycle'])
+('e----', ['equip'])
+('-e---', ['jelly'])
+('---e-', ['pixel', 'vixen', 'yoked'])
+('--e-e', ['queue'])
+Selected partition: -----
+I'm sorry, e is not in the word!
+Potential words: ['blitz', 'buxom', 'crypt', 'fjord', 'flyby', 'funny', 'gizmo', 'glyph', 'ivory', 'juicy', 'jumbo', 'kiosk', 'klutz', 'lucky', 'lymph', 'nymph', 'puppy', 'quips', 'unzip', 'wimpy', 'woozy', 'yummy', 'zilch']')
+There are 23 possible words
+You have 3 guesses remaining
+Guessed letters: {'e', 'a'}
+Current hint: -----
+Enter a letter: u
+Partitions:
+('-----', ['blitz', 'crypt', 'fjord', 'flyby', 'gizmo', 'glyph', 'ivory', 'kiosk', 'lymph', 'nymph', 'wimpy', 'woozy', 'zilch'])
+('-u---', ['buxom', 'funny', 'juicy', 'jumbo', 'lucky', 'puppy', 'quips', 'yummy'])
+('--u--', ['klutz'])
+('u----', ['unzip'])
+Selected partition: -----
+I'm sorry, u is not in the word!
+Potential words: ['blitz', 'crypt', 'fjord', 'flyby', 'gizmo', 'glyph', 'ivory', 'kiosk', 'lymph', 'nymph', 'wimpy', 'woozy', 'zilch']')
+There are 13 possible words
+You have 2 guesses remaining
+Guessed letters: {'e', 'a', 'u'}
+Current hint: -----
+Enter a letter: y
+Partitions:
+('-----', ['blitz', 'fjord', 'gizmo', 'kiosk', 'zilch'])
+('--y--', ['crypt', 'glyph'])
+('--y-y', ['flyby'])
+('----y', ['ivory', 'wimpy', 'woozy'])
+('-y---', ['lymph', 'nymph'])
+Selected partition: -----
+I'm sorry, y is not in the word!
+Potential words: ['blitz', 'fjord', 'gizmo', 'kiosk', 'zilch']')
+There are 5 possible words
+You have 1 guesses remaining
+Guessed letters: {'e', 'a', 'y', 'u'}
+Current hint: -----
+Enter a letter: z
+Partitions:
+('----z', ['blitz'])
+('-----', ['fjord', 'kiosk'])
+('--z--', ['gizmo'])
+('z----', ['zilch'])
+Selected partition: -----
+I'm sorry, z is not in the word!
+Potential words: ['fjord', 'kiosk']')
+There are 2 possible words
+You lose!  The word was fjord.
+
+  /\_/\
+ ( o.o )
+  > ^ <
+
+Ohh so sad, you got the lost cat 😆
