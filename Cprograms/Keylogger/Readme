@@ -1,3 +1,7 @@
+This program is a Linux kernel module that installs a keylogger.  The ouput of the 
+keylogger can be seen by doing cat on the process.
+
+
 1.  Compile the module in a terminal
 
   $ make
@@ -14,7 +18,7 @@
 
 5.  To view the keylogger file type:
 
-  $ cat /proc/cpuinfo
+  $ cat /proc/klogger
 
 6.  Remove the module
 
