@@ -1,0 +1,22 @@
+1.  Compile the module in a terminal
+
+  $ make
+
+2.  Install the module
+
+  $ sudo insmod klogger.ko
+
+3.  List installed modules to verify it loaded correctly
+
+  $ lsmod
+
+4.  Type something on the keyboard
+
+5.  To view the keylogger file type:
+
+  $ cat /proc/cpuinfo
+
+6.  Remove the module
+
+  $ sudo rmmod klogger
+
