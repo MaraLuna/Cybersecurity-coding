@@ -1,1 +1,48 @@
+----------------------
+PURPOSE
+----------------------
+This program will create a TCP Chat Client with the Server on the University of Denver.
+
+----------------------
+Command Line Arguments
+----------------------
+
+Usage: python3 client.py <server_ip> <server_port>
+
+Example:  python3 client.py compnet.cd.du.edu 7775
+
+python3 - this is a python script and to needed to run it
+client.py - the name of the program
+<server name> -- Please provide the server name to connect
+<port number> -- Please provide the port number to use
+
+-------------------------
+Design Decisions 
+-------------------------
+ The program will automatically prompt the user for their name and the rooms they would like to join
+ and will connect to the server and port specified when running the program.
+    User's names are limited to 60 bytes.
+
+ Then the user will be prompted with a message and asked for which room/user the message is for 
+ and will send that to the server.
+    Rooms are limited in size to less than 60 bytes.
+
+ The program will also be monitoring for incoming server messages.
+
+To send a message to a room, type a message when promoted and then enter the room to send the message to.
+    Messages are limited in size to 3800 bytes.
+
+ To send a direct message to another user, simply type the message and then when prompted - enter the user's name.
+    Messages are limited in size to 3800 bytes.
+
+ To disconnect at any time type 'exit' when prompted for a message to send.
+
+
+-------------------------
+Possible Issues
+-------------------------
+
+Users may encounter an issue where when trying to send a message, a server message is received and printed on the screen.
+
+Multiple users with the same name are not validated.
 
