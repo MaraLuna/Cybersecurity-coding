@@ -1,1 +1,42 @@
+----------------------
+PURPOSE
+----------------------
 
+Program will simulate playing the War card game and approximate the average number of hands per game by running the game multiple times.
+
+
+A standard 52-card deck is shuffled and dealt to two players so each receives 26 cards into their personal decks. 
+Then hands are played until the one player runs out of cards. If the other player still has cards, they win, otherwise the game is a draw.
+
+A hand consists of the following steps:
+
+Both players simultaneously reveal the top card from their respective decks placing them into a common pool.
+When those cards are revealed the face value, ignoring the suit, is compared. If one is higher than the other, 
+the player with the higher cards takes all of the cards in the common pool and places them on the bottom of their personal decks, ending the turn.
+If the face value of the cards is the same, then place the top card from both player decks into the common pool, 
+then reveal another card for comparison. The process of moving the top cards to the common pool followed by another card reveal 
+continues until either there is a winner of the war or one player runs out of cards.
+The game ends when one player runs out of cards. If both players run out of cards simultaneously, the game is a draw, 
+otherwise the player that still has cards is the victor.
+
+----------------------
+Sample Output:
+----------------------
+
+Game #997:
+Winner is player2.
+Took 844 hands.
+
+Game #998:
+Winner is player1.
+Took 117 hands.
+
+Game #999:
+Winner is player2.
+Took 1214 hands.
+
+Game #1000:
+Winner is player1.
+Took 596 hands.
+
+Mean: 555.574
