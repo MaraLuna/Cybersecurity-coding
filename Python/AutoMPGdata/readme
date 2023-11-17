@@ -1,1 +1,43 @@
+---------------------
+Purpose
+---------------------
+This program will download a publicly available data set and develop some classes that
+will be useful in working with the data. The data set contains information about fuel efficiency
+for some different automobiles.
+This data set consists of 398 records each having nine attributes. 
 
+The data will be downloaded and  saveed in a file called auto-mpg.data.txt. 
+The links below describe the AutoMPG data set that is part of the UCI Machine
+Learning Repository.
+• https://archive.ics.uci.edu/ml/datasets/Auto+MPG
+• https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data
+• https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.names
+
+--------------------
+Running the program
+--------------------
+
+python3 ./autompg3.py 
+
+--------------------
+Output
+--------------------
+The program will output 3 files
+
+•autompg_logfile.log - which logs the running and any errors
+•auto-mpg.data - which is raw data
+•auto-mpg.clean.txt - which is formatted data
+
+
+-------------------
+Sample Output
+-------------------
+
+python3 ./autompg3.py 
+Running Load Data
+Downloading auto-mpg data from https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data..
+Data downloaded to file auto-mpg.data.
+Running Clean Data...
+Sorting data by default.
+Done sorting data.
+Printing sorted data...
