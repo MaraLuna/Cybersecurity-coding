@@ -25,9 +25,23 @@ Running the program
 
 $ ./steganography encode input.ppm payload.ext output.ppm
 
+encode, decode  - process you wish to perform
+input.ppm  - The image file as a ppm to insert the message
+payload.ext - the message to insert
+output.ppm - the image file to output
+
 
 ------------------------
-Sample Output
+Other considerations
 ------------------------
 
-doing an XXD of the file will show the contents.
+The image file must be in the ppm format, there is a sample ppm file titled du.ppm in the repository.
+
+Doing an XXD of the file will show the contents of the ppm before and after.
+
+The payload file is a text file with the message to encode in the picture.
+
+There is a sample txt file with the words 
+"Sekrit message!
+This is a very very secret message."
+to use.
