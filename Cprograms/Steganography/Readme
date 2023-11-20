@@ -1,1 +1,33 @@
+------------------------
+Purpose
+------------------------
+Steganography is the practice of hiding one message within another. 
+It is related to, but differs from cryptography. In steganography, the primary purpose is to sneak a message past a potential adversary. 
+In cryptography, the primary purpose is secure communication. 
+The precise dividing line between the fields is not completely clear and some schemes utilize components from both fields. 
+Generally steganography does not have any shared secret component, a key, and instead relies upon some cleverness to evade detection. 
+In contrast, cryptography requires a shared secret.
 
+Historically the earliest versions of steganography were documented by Herodotus in his Histories. 
+In one, a message was transmitted by one having the messenger shave their head, have the message put onto the scalp and let the hair re-grow.
+Once the messenger got to the recipient they were instructed to shave their head again to transmit the message. 
+In another case, wax tablets concealed the message. Wooden boards were covered in beeswax upon which a message could be carved as a reusable writing surface. The secret message was put upon the board prior to the wax layer being applied. To superficial checks of both the messenger and the wax tablet they would appear normal, but there was no security to these systems beyond the method of concealment being kept secret.
+
+More modern forms of steganography do things like conceal messages in images, video files and so forth.
+
+This program can both encode and decode messages into a ppm image file.
+
+
+------------------------
+Running the program
+------------------------
+
+
+$ ./steganography encode input.ppm payload.ext output.ppm
+
+
+------------------------
+Sample Output
+------------------------
+
+doing an XXD of the file will show the contents.
