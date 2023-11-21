@@ -1,1 +1,46 @@
+---------------------
+Purpose
+---------------------
 
+The purpose of this program is to take a dictionary list of words, do an MD5 hash on them
+and compare them to a file of hashes, cracking the hashed password and printing the time it took in seconds.
+
+
+---------------------
+Running the program
+---------------------
+
+
+
+---------------------
+Sample_Output
+---------------------
+
+This program will crack an MD5 hash.
+Please enter a dictionary file to use: dict.txt
+Please enter an MD5 hash file to decrypt: sample_hashes.txt
+------------------------------------------------------------------------
+Successfully cracked the hashed password 5f4dcc3b5aa765d61d8327deb882cf99. It's: password
+It took 4 attempts to crack this hash.
+The time to execute this crack is:  0.00305 seconds.
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Successfully cracked the hashed password f25a2fc72690b780b2a14e140ef6a9e0. It's: iloveyou
+It took 14 attempts to crack this hash.
+The time to execute this crack is:  0.00394 seconds.
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Successfully cracked the hashed password d0763edaa9d9bd2a9516280e9044d885. It's: monkey
+It took 19 attempts to crack this hash.
+The time to execute this crack is:  0.00402 seconds.
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Successfully cracked the hashed password bbba948425cc8f4c4e7f54d7ed5ac52e. It's: mustang2
+It took 6886 attempts to crack this hash.
+The time to execute this crack is:  0.0144 seconds.
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+Successfully cracked the hashed password a1a92a839e70ecff5ba4c46cce89631b. It's: moonlight1
+It took 6895 attempts to crack this hash.
+The time to execute this crack is:  0.01456 seconds.
+------------------------------------------------------------------------
