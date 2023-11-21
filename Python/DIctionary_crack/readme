@@ -4,13 +4,17 @@ Purpose
 
 The purpose of this program is to take a dictionary list of words, do an MD5 hash on them
 and compare them to a file of hashes, cracking the hashed password and printing the time it took in seconds.
+Two sample files are included:
+
+dict.txt -- 10000 of the most common passwords
+sample_hashes.txt - 5 sample MD5 hashes to crack
 
 
 ---------------------
 Running the program
 ---------------------
 
-
+python3 dictionary_crack.py
 
 ---------------------
 Sample_Output
