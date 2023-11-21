@@ -1,1 +1,49 @@
+------------------
+Purpose
+------------------
 
+This program will implement a brute-force password cracker on files of hashed passwords.
+Passwords are made of 5 lowercase alphabets. So, there are 26^5 = 11,881,376 possible passwords. 
+The program creates a list of all such possible passwords in Python and then attempts to break the hashes in the included files
+and prints the average attempts and average time.
+The program checks the hash/password combo first in random order then in lexigraphical order.
+
+There are (2) SHA256 files and (2) pbkdf files.
+
+------------------
+Included Files
+------------------
+
+There are 4 files to crack the passwords: 
+
+sha256_hash1.txt 
+sha256_hash2.txt 
+are hashes of some passwords computed using the SHA256 hash function.
+
+pbkdf2_hash1.txt
+pbkdf2_hash2.txt 
+are hashes of passwords computed using pbkdf2_sha256 in the passlib library.
+
+------------------
+Running the program
+------------------
+*Ensure all files to be used are in the same folder or amend the code with the correct location.
+
+$ python3 pass_list_final.py
+
+------------------
+Sample Output
+------------------
+
+Checking first SHA256 password file in random order
+hiuoj
+yqeyd
+anjvx
+hevpl
+mbojy
+...
+Average attempts =  5720036.77
+Average time to crack =  2.9012561299999993
+
+Checking Second SHA256 File in random order
+.....
