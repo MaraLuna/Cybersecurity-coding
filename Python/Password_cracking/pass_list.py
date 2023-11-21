@@ -32,8 +32,8 @@ def sha256_crack(file_to_crack, file):
                     et = time.process_time()
                     ttc = et-st
                     #print('There were', atc, 'attempts. Execution time was:', (ttc),'seconds')
-                    print(atc)
-                    print(ttc)
+                    # print(atc)
+                    # print(ttc)
                     total_atc = total_atc + atc
                     total_ttc = total_ttc + ttc
                     atc=0
